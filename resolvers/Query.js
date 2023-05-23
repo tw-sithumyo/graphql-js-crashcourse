@@ -36,7 +36,7 @@ exports.Query = {
     return products.find((product) => product.id == id);
   },
 
-  categories: (parent, args, context) => categories,
+  categories: (parent, args, { categories }) => categories,
 
   category: (parent, { id }, { categories }) => {
     return categories.find((cat) => cat.id === id);
