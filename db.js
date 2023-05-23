@@ -287,6 +287,8 @@ const reviews = [
   },
 ];
 
-exports.products = products;
-exports.categories = categories;
-exports.reviews = reviews;
+exports.db = {
+  products,
+  categories,
+  reviews,
+}

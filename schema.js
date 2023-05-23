@@ -13,6 +13,9 @@ exports.typeDefs = gql`
     addCategory(input: AddCategoryInput): Category!
     addProduct(input: AddProductInput): Product!
     addReview(input: AddReviewInput): Review!
+    deleteCategory(id: ID!): Boolean!
+    deleteProduct(id: ID!): Boolean!
+    deleteReview(id: ID!): Boolean!
   }
 
   type Product {
@@ -23,7 +26,7 @@ exports.typeDefs = gql`
     quantity: Int!
     price: Float!
     onSale: Boolean!
-    categoryId: ID!
+    categoryId: ID
     category: Category
     reviews: [Review!]!
   }
