@@ -289,3 +289,4 @@ const reviews = [
 
 exports.products = products;
 exports.categories = categories;
+exports.reviews = reviews;
